@@ -9,7 +9,7 @@
 	$secret_code = $auth->createSecret();
 
 	$website = "http://localhost/teste-zabbix/";
-	$titulo = "Morphus_Zabbix";
+	$titulo = "Zabbix";
 	$url_qr_code = $auth->getQRCodeGoogleUrl( $titulo, $secret_code, $website );
 
 	echo "<img src='".$url_qr_code."' /> \n";
